@@ -1,20 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      {{title}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">{{title}}</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="music-cards-container">
+    <ion-grid>
+      <ion-row class="music-cards">
+        <!-- <ion-col size="6" (click)="playAudio()">
+          <div class="inner-card">
+            ion-col 1
+          </div>
+        </ion-col> -->
+        <ion-col size="6" *ngFor="let clips of clipsData" (click)="playAudio(clips.name)">
+          <div class="inner-card">
+            {{clips.name}}
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>

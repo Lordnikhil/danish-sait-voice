@@ -1,5 +1,7 @@
 {
   "name": "danish-sait-voice",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
