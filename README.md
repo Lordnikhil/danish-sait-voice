@@ -12,3 +12,5 @@ To run the project in Android Virtual Device
 `ionic cordova run android -l`
 
 Best viewed in Chrome device mode and Android Studio Virtual Device.
+
+[a link](https://drive.google.com/file/d/1btZq_mVJcTINf_IVzmbA_xhWPskO4QmW/view?usp=sharing)
